@@ -1,3 +1,9 @@
 # terminator centos 7
 
-yum install - y http://li.nux.ro/download/nux/dextop/el7/x86_64/terminator-0.97-6.el7.nux.noarch.rpm
+# yum install - y http://li.nux.ro/download/nux/dextop/el7/x86_64/terminator-0.97-6.el7.nux.noarch.rpm
+yum install -y terminator
+# su
+# vi `which terminator`
+# After the "import" lines at top... (on my Pop_OS 20.04 just 4 lines), insert following and save file.
+
+# os.environ['DBUS_SESSION_BUS_ADDRESS'] = ''
